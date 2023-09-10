@@ -1,0 +1,14 @@
+{
+  "name": "express-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "appy, rest, express, nodejs"
+  },
+  "author": "Pedro Chávez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
