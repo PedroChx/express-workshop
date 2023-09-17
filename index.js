@@ -1,6 +1,15 @@
 const express = require('express');
 const app = express();
 const { pokemon } = require('./pokedex.json')
+
+
+/*
+* GET - obtener recursos
+* POST - almacenar/crear recursos
+* PUT - modificar una parte de un recurso
+* PUT - modificar un recurso completo
+* */
+
 app.get("/", (req, res, next) => {
     res.status(200);
     res.send("Bienvenido al pokedex ☆*: .｡. o(≧▽≦)o .｡.:*☆");
@@ -20,7 +29,6 @@ app.get('/pokemon/:id([0-9]{1,3})', (req, res, next)=>{
         res.status(404);
         res.send("Pokemón no encontrado")
 });
-
 app.get('/pokemon/:name', (req, res, next) => {
     const name = req.params.name;
     for(i = 0; i < pokemon.length; i++) {
