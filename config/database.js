@@ -9,6 +9,7 @@ const pool = mysql.createPool({
     database: 'pokemon'
 });
 
+//Pokemon nwn
 
 pool.query = util.promisify(pool.query);
 

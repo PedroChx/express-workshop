@@ -4,6 +4,8 @@ const express = require('express');
 const app = express();
 const pokemon = require('./routes/pokemon')
 
+//Pokemon nwn
+
 
 /*
 * GET - obtener recursos

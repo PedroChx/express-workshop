@@ -2,6 +2,9 @@ const express = require ('express')
 const pokemon = express.Router();
 const  db = require('../config/database')
 
+//Pokemon nwn
+
+
 pokemon.post("/", (req, res, next)=>{
     return res.status(200).send(req.body.name);
 });
