@@ -8,9 +8,7 @@ const pool = mysql.createPool({
     password: '',
     database: 'pokemon'
 });
-
-//Pokemon nwn
-
+//OWO MANT
 pool.query = util.promisify(pool.query);
 
 module.exports = pool;

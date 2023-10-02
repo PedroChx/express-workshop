@@ -3,10 +3,6 @@ const morgan = require('morgan');
 const express = require('express');
 const app = express();
 const pokemon = require('./routes/pokemon')
-
-//Pokemon nwn
-
-
 /*
 * GET - obtener recursos
 * POST - almacenar/crear recursos
@@ -18,6 +14,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+//OWO MANT
 
 app.get("/", (req, res, next) => {
     return res.status(200).send("Bienvenido al pokedex ☆*: .｡. o(≧▽≦)o .｡.:*☆");
